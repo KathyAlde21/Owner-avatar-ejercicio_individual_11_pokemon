@@ -21,4 +21,9 @@
 
     <string name="sBienvenida">¡Bienvenido al mundo Pokémon!</string>
 
+    <string name="sEntrenador">Imagen del entrenador</string>
+    <string name="sEvo1">Evolución 1</string>
+    <string name="sEvo2">Evolución 2</string>
+    <string name="sEvo3">Evolución 3</string>
+
 </resources>

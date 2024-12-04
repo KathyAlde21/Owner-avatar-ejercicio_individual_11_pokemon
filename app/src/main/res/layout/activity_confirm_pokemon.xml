@@ -22,17 +22,86 @@
         android:textSize="20sp"
         android:textStyle="bold" />
 
-    <!-- Nombre del Pokémon seleccionado -->
-    <TextView
-        android:id="@+id/pokemon_name_text"
-        android:layout_width="wrap_content"
+    <!-- Sección del entrenador -->
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:gravity="center"
-        android:text=""
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+        android:padding="16dp"
+        android:background="@drawable/section_background">
 
+        <ImageView
+            android:id="@+id/coach_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ash_pikachu"
+            android:contentDescription="@string/sEntrenador"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Nombre del Pokémon seleccionado -->
+        <TextView
+            android:id="@+id/pokemon_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/sPokemonSeleccionado"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <!-- Sección de evoluciones -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/section_background">
+
+        <TextView
+            android:id="@+id/evolution_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Evoluciones de [Pokémon]"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/evolution_image_1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/evolution_placeholder"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="@string/sEvo1" />
+
+            <ImageView
+                android:id="@+id/evolution_image_2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/evolution_placeholder"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="@string/sEvo2" />
+
+            <ImageView
+                android:id="@+id/evolution_image_3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/evolution_placeholder"
+                android:contentDescription="@string/sEvo3" />
+
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>
 
 
